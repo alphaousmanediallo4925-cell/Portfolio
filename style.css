@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050b14;
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    border-bottom: 1px solid #182333;
+}
+
+
+nav {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.logo span {
+    color: #1683ff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.logo h2 {
+    font-size: 18px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu a:hover {
+    color: #1683ff;
+}
+
+
+.cv {
+    color: #1683ff;
+    border: 1px solid #1683ff;
+    padding: 10px 18px;
+    border-radius: 25px;
+     transition: 0.3s;
+    text-decoration: none;
+}
+.cv:hover{
+  transform: translateY(-5px);
+   box-shadow: 3px 3px 5px #1683ff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 90%;
+    max-width: 1400px;
+
+    min-height: 560px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+.hero-text {
+    width: 55%;
+}
+
+
+.bonjour {
+    color: #1683ff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+
+.hero h1 span {
+    color: #1683ff;
+}
+
+
+.hero-text h2 {
+    color: #b8c6d9;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+
+.description {
+    color: #a8b6c9;
+    font-size: 18px;
+    line-height: 1.7;
+
+    max-width: 650px;
+}
+
+
+.boutons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+
+
+.principal {
+    background-color: #1683ff;
+    color: white;
+    transition: 0.3s;
+}
+.principal:hover{
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 5px #050b14;
+}
+
+
+.secondaire {
+    border: 1px solid #1683ff;
+    color: white;
+    transition: 0.3s;
+}
+.secondaire:hover{
+  transform: translateY(-5px);
+   box-shadow: 3px 3px 5px #1683ff;
+}
+
+
+.reseaux {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+
+.reseaux a {
+    color: white;
+    text-decoration: none;
+   
+}
+.reseaux a:hover{
+  color: #1683ff;
+}
+
+.hero-image {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.hero-image img {
+    width: 100%;
+    max-width: 430px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 80px rgba(0, 115, 255, 0.35);
+}
+.hero-image img:hover{
+    transform: translateY(-5px);
+    transition:  0.3s;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 90px 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+}
+
+
+.titre-section {
+    color: #1683ff;
+    font-weight: bold;
+    
+    margin-bottom: 15px;
+}
+
+
+.about h2,
+.competences h2,
+.projects h2,
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+
+.about-text > p:not(.titre-section) {
+    color: #a8b6c9;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+
+.informations {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+
+.informations div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.informations strong {
+    font-size: 20px;
+}
+
+
+.informations p {
+    color: #b8c6d9;
+}
+
+
+/* =========================
+   COMPETENCES
+========================= */
+
+.skills {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.skill {
+    min-height: 70px;
+
+    background-color: #0a1422;
+
+    border: 1px solid #17263a;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.skill span {
+    color: #1683ff;
+    font-weight: bold;
+}
+
+
+.skill p {
+    color: #c5d0df;
+}
+
+
+/* =========================
+   PROJETS
+========================= */
+
+.projects {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 80px 0;
+}
+
+
+.project-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.project {
+    background-color: #0a1422;
+
+    border: 1px solid #17263a;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    transition: ease 0.4s;
+}
+.project:hover{
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 3px #1683ff;
+}
+
+
+.project h3 {
+    margin-bottom: 15px;
+}
+
+
+.project p {
+    color: #a8b6c9;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+.project a {
+    color: #1683ff;
+    text-decoration: none;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+
+    width: 90%;
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+
+.contact p:not(.titre-section) {
+    color: #a8b6c9;
+
+    line-height: 1.6;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    border-top: 1px solid #182333;
+
+    padding: 25px;
+
+    color: #718096;
+}
+
+footer a svg{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* =================================================
+   TABLETTE
+================================================= */
+
+@media (max-width: 1000px) {
+
+    .menu {
+        gap: 15px;
+    }
+
+
+    .cv {
+        display: none;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-text h2 {
+        font-size: 20px;
+    }
+
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .project-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =================================================
+   TELEPHONE
+================================================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+
+        padding: 20px 0;
+
+        gap: 20px;
+    }
+
+
+    .menu {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+
+    .hero {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        padding: 60px 0;
+    }
+
+
+    .hero-text {
+        width: 100%;
+    }
+
+
+    .hero-image {
+        width: 100%;
+    }
+
+
+    .hero-image img {
+        max-width: 300px;
+    }
+
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+
+    .hero-text h2 {
+        font-size: 19px;
+    }
+
+
+    .description {
+        font-size: 16px;
+    }
+
+
+    .boutons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .reseaux {
+        justify-content: center;
+    }
+
+
+    .about {
+        padding: 60px 0;
+
+        text-align: center;
+    }
+
+
+    .about h2,
+    .competences h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+
+    .informations {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =================================================
+   PETIT TELEPHONE
+================================================= */
+
+@media (max-width: 450px) {
+
+    .logo {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .logo h2 {
+        font-size: 16px;
+    }
+
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+
+    .btn {
+        width: 100%;
+    }
+
+
+    .boutons {
+        flex-direction: column;
+    }
+
+}
